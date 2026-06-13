@@ -9,13 +9,13 @@ body {
 }
 
 .bacg-shape{
-    width: 20rem;
-    height: 40rem;
+    width: 60%;
+    height:100%;
     background: #7446FA;
     background: linear-gradient(to right, #7446FA 13%, #E777D5 100%); 
     border-bottom-right-radius: 25rem;
     position: absolute;
-    top: -8rem;
+    top: 0.1rem;
 }
 
 
@@ -254,7 +254,7 @@ article p {
     body {
         display: grid;
         gap: 2rem;
-        grid-template-columns: 0.3fr 1fr 1fr 0.8fr;
+        grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
         grid-template-rows: 1fr;
        
     }
@@ -280,26 +280,25 @@ article p {
 
     
 .bacg-shape{
-    width: 40rem;
-    height: 49rem;
+    width: 40%;
+    height: 100%;
     background: #7446FA;
     background: linear-gradient(to right, #7446FA 13%, #E777D5 100%); 
-     border-bottom-right-radius: 25rem;
+    border-bottom-right-radius: 25rem;
     border-bottom-left-radius: 25rem;
-    position: absolute;
     left: -8rem;
+    top: 0.1rem;
 }
 
-
 .bacg-shape1{
-    width: 35rem;
-    height: 60rem;
+    width: 40%;
+    height: 100%;
     background: #7446FA;
     background: linear-gradient(to right, #7446FA 13%, #E777D5 100%); 
     border-bottom-right-radius: 25rem;
     border-bottom-left-radius: 25rem;
     position: absolute;
-    left: 97rem;
+    right: -13rem;
     top: 10rem;
     transform: rotate(180deg);
     opacity: 0.04;
