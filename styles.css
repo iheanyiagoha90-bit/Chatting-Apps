@@ -247,6 +247,7 @@ article p {
     line-height: 1.6;
     text-align: center;
     color: #999;
+    position: relative;
 }
 
 
@@ -280,7 +281,7 @@ article p {
 
     
 .bacg-shape{
-    width: 40%;
+    width: 300%;
     height: 100%;
     background: #7446FA;
     background: linear-gradient(to right, #7446FA 13%, #E777D5 100%); 
