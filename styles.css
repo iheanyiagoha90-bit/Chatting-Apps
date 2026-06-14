@@ -232,7 +232,7 @@ input::placeholder {
 
 article {
     text-align: center; 
-    
+    position: relative;
 }
 
 h1 {
@@ -247,7 +247,7 @@ article p {
     line-height: 1.6;
     text-align: center;
     color: #999;
-    position: relative;
+    
 }
 
 
@@ -281,7 +281,7 @@ article p {
 
     
 .bacg-shape{
-    width: 300%;
+    width: 80%;
     height: 100%;
     background: #7446FA;
     background: linear-gradient(to right, #7446FA 13%, #E777D5 100%); 
