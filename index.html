@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+<body class="d-flex flex-column">
+    <div class=" flex-1">
+        
+        <header class="mb-3 header container-fluid">
+            <div class="innerheader py-3 d-flex container-fluid">
+                <div class="logo-icon">
+
+                    <i class="fa-solid fa-location-crosshairs"></i>
+
+                </div>
+
+                <div class="logo ms-2">
+                    Attendance Kiosk
+                </div>
+
+                <div class="menus ms-5 ">
+                    <ul class="row">
+                    <li class="menulink col-auto">
+                        <a href="" class="active">Signing Kiosk</a>
+                    </li>
+
+                    <li class="menulink col-auto">
+                        <a href="">Time History</a>
+                    </li>
+
+                    <li class="menulink col-auto">
+                        <a href="">Admin Management</a>
+                    </li>
+
+                    <li class="signout col-auto ms-auto">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <a href="">Sign Out</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+
+            
+        </header>
+
+        <!--clock-in section-->
+        <div class="signing-container mx-auto">
+            <div class="upper text-center">
+                <div class="dateupdate"></div>
+                <div class="timeupdate"></div>
+            </div>
+
+            <div class="signingcard ">
+                <div class="buttns ">
+                    <button type="button" class="signBtn Btn mb-4"> Clock In</button><br>
+                    <button type="button" class="signBtn">Clock Out</button>
+                    
+                    <div class="msgicon mt-4 ">
+                    <i class="fa-solid  fa-user-clock"></i>
+                    <span class="">Please Click to sign in or out</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+  <footer class="copyright mx-auto py-4">
+    &copy 2026 designed. All rights reserved
+  </footer>
+           
+
+  
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
+    <script src="/script.js"></script>
+</body>
+</html>
