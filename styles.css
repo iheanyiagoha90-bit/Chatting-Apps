@@ -1,83 +1,30 @@
-/*Dashboard page */
-
 body {
     margin: 0;
-    background-color: #111419;
-    color: white;
     font-family: Arial, sans-serif;
 }
 
-/*HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 .header {
-    height: 60px;
+    min-height: 50px;
     background-color: rgb(246, 244, 244);
 }
 
-.menulink {
-    list-style: none;
-    margin-right: 10px;
-    font-size: 12px;
-    font-weight: 450;
-    cursor: pointer;
-}
 
-.menulink a {
-    text-decoration: none;
-    color: black;
-}
-
-.menulink a:hover {
-    color: purple;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-}
-
-.menulink a.active {
-    color: #4b0082;
-    text-decoration: underline;
-    text-underline-offset: 8px;
-}
-
-.signout {
-    list-style: none;
-    margin-right: 25px;
-    background-color: #d4d5d7;
-    font-size: 11px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
- .signout a {
-    text-decoration: none;
-    color: black;
-}
-
-
-
-.signout:hover{
-    transform: translateY(-2px)
-}
-
-/*  SIDEBAR */
-
-.sidebar {
-    min-height: 100vh;
-    background-color: #080b10;
-}
-
-
-/* Logo */
+/* LOGO */
 
 .logo {
     color: rgb(114, 72, 72);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
 }
 
 .logo-icon {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 
     border-radius: 50%;
 
@@ -93,383 +40,239 @@ body {
 
 /* MENU */
 
-.menu-title {
-    color: #858991;
-
+.menulink {
+    list-style: none;
+    margin-right: 10px;
     font-size: 12px;
-    font-weight: 600;
-
-    letter-spacing: 2px;
+    font-weight: 450;
+    cursor: pointer;
+    margin-bottom: px;
 }
 
-
-.sidebar .nav-link,
-.mobile-menu .nav-link {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-
-    color: #aeb1b8;
-
-    padding: 14px 16px;
-
-    margin-bottom: 5px;
-
-    border-radius: 10px;
-
+.menulink a {
     text-decoration: none;
+    color: black;
+}
 
-    transition: 0.3s;
+.menulink a:hover {
+    color: #3a4d17;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.menulink a.active {
+    color: #3a4d17;
+    text-decoration: underline;
+    text-underline-offset: 8px;
 }
 
 
-.sidebar .nav-link:hover,
-.mobile-menu .nav-link:hover {
+/* LOGOUT BUTTON */
 
-    background-color: #202329;
-
-    color: #45f0c0;
+.signout {
+    list-style: none;
+    margin-right: 25px;
+    background-color: #d4d5d7;
+    font-size: 11px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-
-.sidebar .nav-link i:first-child,
-.mobile-menu .nav-link i:first-child {
-
-    width: 22px;
-
-    text-align: center;
-}
-
-
-/*  SUB MENU */
-
-.sub-link {
-
-    display: block;
-
-    color: #92959c;
-
+.signout a {
     text-decoration: none;
+    color: black;
+}
 
-    padding: 10px 10px 10px 52px;
-
-    border-radius: 8px;
-
-    transition: 0.3s;
+.signout:hover {
+    transform: translateY(-2px);
 }
 
 
-.sub-link:hover {
+/* =========================
+   MAIN
+========================= */
 
-    color: #45f0c0;
 
-    background-color: #202329;
-}
+/* SIGNING KIOSK PAGE */
 
 
-/*  MOBILE MENU */
-
-.mobile-menu {
-
-    background-color: #080b10;
-
-    border-bottom: 1px solid #24272c;
-}
-
-
-/*  MAIN */
-
-.main {
-
-    min-height: 100vh;
-
-    background-color: #111419;
-}
-
-
-/* SEARCH */
-
-.search-container {
-    width: 100%;
-}
-
-
-.search-box {
-
-    position: relative;
-
-    width: 400px;
-}
-
-
-.search-box i {
-
-    position: absolute;
-
-    left: 15px;
-
-    top: 50%;
-
-    transform: translateY(-50%);
-
-    color: #999;
-
-    z-index: 2;
-   
-}
-
-
-.search-box input {
-
-    width: 100%;
-
-    padding: 12px 15px 12px 45px;
-
-    background-color: #202329;
-
-    border: none;
-
-    border-radius: 10px;
-
-    color: rgb(202, 195, 195);
-}
-
-
-.search-box input::placeholder {
-
-    color: #888;
-}
-
-
-.search-box input:focus {
-
-    background-color: #202329;
-
-    color: white;
-
-    border-color: #45f0c0;
-
-    box-shadow: none;
-}
-
-
-/* EMPLOYEE CARD */
-
-.details-card {
-
-    background-color: #202226;
-
-    border-radius: 20px;
-
-    padding: 30px;
-
-    min-height: auto;
-}
-
-
-.label {
-    font-size: 14px;
-    color: #92959c;
-}
-
-
-.name {
-
-    color: white;
-
-    font-size: 18px;
-
-    font-weight: 400;
-}
-
-
-.employee-value {
-
-    color: white;
-
-    font-size: 15px;
-
-    margin-top: 5px;
-}
-
-
-/* PROFILE*/
-
-.profile-img {
-
-    width: 100px;
-
-    height: 100px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-}
-
-
-/* STATISTICS */
-
-.stat-card {
-
-    background-color: #393b40;
-
-    border-radius: 18px;
-
-    padding: 18px;
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-
-    min-height: 90px;
-}
-
-
-.stat-icon {
-
-    width: 50px;
-
-    height: 50px;
-
-    border-radius: 50%;
-
-    background-color: #4b4d52;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: #45f0c0;
-
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-
-.stat-number {
-
-    color: white;
-
-    font-size: 16px;
-
-    font-weight: 500;
-}
-
-
-.stat-label {
-
-    color: #b1b2b5;
-
-    font-size: 13px;
-}
-
-
-/* MOBILE */
-
-@media (max-width: 991.98px) {
-
-    .details-card {
-
-        padding: 20px;
-
-        border-radius: 18px;
-    }
-
-    .search-box {
-
-        width: 100%;
-    }
-
-}
-
-
-@media (max-width: 575.98px) {
-
-    .details-card {
-
-        padding: 15px;
-    }
-
-    .name {
-
-        font-size: 20px;
-    }
-
-    .profile-img {
-
-        width: 100px;
-
-        height: 100px;
-    }
-
-}
-
-/* End of Dashboard*/
-
-/* Attendance Sign-in first-page */
+/* SIGNING CONTAINER */
 
 .signing-container {
     position: relative;
-    width: 30rem;
+
+    /* Responsive width */
+    width: 100%;
+    max-width: 35rem;
+
     margin: 0 auto;
-    box-shadow: 0 3px 4px gray;
+
+    box-shadow: 0 3px 4px rgb(245, 243, 243);
+
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+
+    overflow: hidden;
 }
+
+
+/* =========================
+   UPPER DESIGN
+========================= */
 
 .upper {
-    width: 30rem;
-    height: 6rem;
-    background-color: rgb(57, 51, 51);
+    width: 100%;
+    min-height: 6rem;
+
+    background-color: rgb(12, 0, 0);
+
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+
+    padding: 13px 15px;
+
+    color: rgb(240, 238, 233);
 }
 
-.timeupdate{
+
+.timeupdate {
     font-size: 25px;
+
+    color: rgb(240, 238, 233);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.smallsize {
+    font-size: 10px;
     color: rgb(240, 238, 233);
 }
-.dateupdate{
-    font-size: 25px;
-    color: rgb(240, 238, 233);
+
+.currentlog {
+    padding-left: 10px;
 }
+
+
+.logvalue {
+    font-weight: 700;
+}
+
+
+.logval {
+    color: white !important;
+}
+
+
+/* =========================
+   SIGNING CARD
+========================= */
 
 .signingcard {
-    width: 30rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
+
     background-color: rgb(250, 248, 248);
 }
 
-.buttns {
-   padding: 120px 0 0 150px ;
+
+.textcolor {
+    color: rgb(50, 48, 48);
 }
 
-.signBtn{
-    width: 10rem;
-    color: white;
-    background-color: red;
+
+/* BREAK */
+
+.breakicon {
+    margin-left: 0;
+}
+
+
+.breaktime {
+    width: auto;
+
     border: none;
+
+    font-size: 8px;
+}
+
+
+/* INPUT */
+
+.nameform::placeholder {
+    color: #4b0082;
+    font-size: 10px;
+    font-style: italic;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttns {
+    padding: 20px 0 20px 0;
+}
+
+
+.signBtn {
+    width: 4rem;
+    height: 1.5rem;
+
+    color: white;
+
+    background-color: red;
+
+    border: none;
+
     box-shadow: 1px 5px 15px gray;
+
     border-radius: 8px;
-    transition: all 0.3s ease
+
+    transition: all 0.3s ease;
+
+    font-size: 10px;
 }
 
-.signBtn:hover{
-    transform: translateY(-2px)
-}
-.Btn{
-    background-color: green;
+
+.signBtn:hover {
+    transform: translateY(-2px);
 }
 
-.msgicon{
-    margin: 0 0 0 -30px
+
+.Btn {
+    background-color: rgb(104, 139, 104);
 }
 
-/*End of Attendance sign-in page */
+
+/* MESSAGE */
+
+.msgicon {
+    font-size: 10px;
+}
+
+/* display1*/
+
+.smallersize {
+    font-size: 8px;
+}
+
+.msg {
+  
+}
+
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.copyright {
+    text-align: center;
+}

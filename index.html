@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Attendance Kiosk</title>
+
     <link rel="stylesheet" href="/styles.css">
+
     <!-- Bootstrap -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -19,80 +22,256 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 </head>
-<body class="d-flex flex-column">
-    <div class=" flex-1">
-        
-        <header class="mb-3 header container-fluid">
-            <div class="innerheader py-3 d-flex container-fluid">
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- HEADER -->
+    <header class="mb-3 header container-fluid flex-1">
+
+        <div class="innerheader py-3 d-flex flex-column flex-md-row align-items-center">
+
+            <!-- LOGO -->
+            <div class="d-flex align-items-center">
+
                 <div class="logo-icon">
-
                     <i class="fa-solid fa-location-crosshairs"></i>
-
                 </div>
 
-                <div class="logo ms-2">
-                    Attendance Kiosk
+                <div class="logo ms-2 mb-3">
+                    Attendance
                 </div>
 
-                <div class="menus ms-5 ">
-                    <ul class="row">
-                    <li class="menulink col-auto">
-                        <a href="" class="active">Signing Kiosk</a>
+            </div>
+
+
+            <!-- MENU -->
+            <div class="menus ms-0 ms-md-5 w-100">
+
+                <ul class="row flex-column flex-md-row align-items-center mb-0 ps-0">
+
+                    <li class="menulink col-auto mb-3 ms-5">
+                        <a href="" class="active">
+                            Signing Kiosk
+                        </a>
                     </li>
 
-                    <li class="menulink col-auto">
-                        <a href="">Time History</a>
+                    <li class="menulink col-auto mb-3">
+                        <a href="">
+                            Time History
+                        </a>
                     </li>
 
-                    <li class="menulink col-auto">
-                        <a href="">Admin Management</a>
+                    <li class="menulink col-auto mb-3">
+                        <a href="">
+                            Admin Management
+                        </a>
                     </li>
 
-                    <li class="signout col-auto ms-auto">
+                    <!-- SIGN OUT -->
+                    <li class="signout col-auto ms-0 ms-md-auto">
+
                         <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        <a href="">Sign Out</a>
+
+                        <a href="">
+                            Sign Out
+                        </a>
+
                     </li>
+
                 </ul>
-                </div>
+
             </div>
 
-            
-        </header>
-
-        <!--clock-in section-->
-        <div class="signing-container mx-auto">
-            <div class="upper text-center">
-                <div class="dateupdate"></div>
-                <div class="timeupdate"></div>
-            </div>
-
-            <div class="signingcard ">
-                <div class="buttns ">
-                    <button type="button" class="signBtn Btn mb-4"> Clock In</button><br>
-                    <button type="button" class="signBtn">Clock Out</button>
-                    
-                    <div class="msgicon mt-4 ">
-                    <i class="fa-solid  fa-user-clock"></i>
-                    <span class="">Please Click to sign in or out</span> 
-                    </div>
-                </div>
-            </div>
         </div>
 
-    
-    </div>
+    </header>
 
-  <footer class="copyright mx-auto py-4">
-    &copy 2026 designed. All rights reserved
-  </footer>
-           
 
-  
+    <!-- MAIN -->
+    <section class="flex-2 px-3 mb-4">
+
+        <!-- CLOCK-IN SECTION -->
+        <div class="signing-container mx-auto">
+
+            <!-- TOP SECTION -->
+            <div class="upper d-flex flex-column flex-sm-row justify-content-between">
+
+                <!-- DATE / TIME -->
+                <div class="col-12 col-sm-8">
+
+                    <span class="smallsize">
+                        Attendance . Fast Clock-In/Clock-Out Kiosk
+                    </span>
+
+                    <div class="timeupdate"></div>
+
+                    <div class="dateupdate smallsize"></div>
+
+                </div>
+
+
+                <!-- LOG INFORMATION -->
+                <div class="col-12 col-sm-auto mt-2 mt-sm-0">
+
+                    <div class="d-flex">
+
+                        <div>
+                            <span class="smallsize">
+                                OnShift Now
+                            </span>
+
+                            <div class="text-success text-center logvalue">
+                                1 / 4
+                            </div>
+                        </div>
+
+
+                        <div class="currentlog">
+
+                            <span class="smallsize onshift">
+                                Today's log
+                            </span>
+
+                            <div class="text-center logvalue logval">
+                                3
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIGNING CARD -->
+            <div class="signingcard container">
+
+                <!-- EMPLOYEE -->
+                <div class="smallsize textcolor pt-3 pb-2">
+                    1. Employee PIN or Name
+                </div>
+
+                <input
+                    class="text form-control nameform"
+                    type="text"
+                    placeholder="Enter your pin or name"
+                >
+
+
+                <!-- BREAK -->
+                <div class="smallsize textcolor pt-3 pb-2">
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center">
+
+                        <span>
+                            2. Shift Break (optional)
+                        </span>
+
+                        <span class="breakicon ms-0">
+
+                            <i class="fa-solid fa-mug-hot"></i>
+
+                            Break Time
+
+                            <select class="breaktime">
+
+                                <option value="10mins">
+                                    10mins
+                                </option>
+
+                            </select>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <input
+                    class="text form-control nameform"
+                    type="text"
+                    placeholder="Enter break"
+                >
+
+
+                <!-- BUTTONS -->
+                <div class="buttns">
+
+                    <div class="d-flex flex-column flex-sm-row gap-2">
+
+                        <button
+                            type="button"
+                            class="signBtn Btn"
+                        >
+                            Clock In
+                        </button>
+
+                        <button
+                            type="button"
+                            class="signBtn"
+                        >
+                            Clock Out
+                        </button>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+                    <div class="msgicon mt-2">
+
+                        <i class="fa-solid fa-user-clock"></i>
+
+                        <span >
+                            Please Click to sign in or out
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="flex-3 px-3 mb-4">
+        <div class="signing-container px-3 smallsize textcolor pt-3 pb-2">
+            <div class=" d-flex flex-column mb-3 flex-md-row justify-content-between align-items-md-center">
+                <div class="row">
+                <span>Team Roaster View</span>
+                <span class=" smallersize testcolor">Click name to log-in</span>
+                </div>
+                <span class="">Total: 4</span>
+            </div>    
+                
+        
+            <div class="datadisplay ">data</div>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer class="copyright mx-auto py-4 flex-4 mt-auto">
+
+        &copy; 2026 designed. All rights reserved
+
+    </footer>
+
+
+    <!-- BOOTSTRAP JS -->
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYjWJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous">
     </script>
+
+    <!-- YOUR JS -->
     <script src="/script.js"></script>
+
 </body>
 </html>

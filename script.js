@@ -13,7 +13,7 @@ function updateTimeAndDate(){
         year: "numeric",
     });
    
-    timeupdate.textContent = now.toLocaleTimeString("en-GB",{hour12: true})
+    timeupdate.textContent = now.toLocaleTimeString("en-GB",{hour12: true}).toUpperCase()
 }
 setInterval(updateTimeAndDate, 1000)
 updateTimeAndDate()
